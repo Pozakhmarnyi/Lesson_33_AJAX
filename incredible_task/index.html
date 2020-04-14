@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incredible</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+      #content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      #content div {
+        width: 33%;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <input type="text" name="text" id="userValue" value="search by name" />
+    <select id="single">
+      <option>movie</option>
+      <option>series</option>
+      <option>episode</option>
+    </select>
+    <button id="Search" onclick="pressFuncSearch()">Search</button>
+    <div id="DIV"></div>
+
+    <div id="content"></div>
+
+    <script src="scr.js"></script>
+  </body>
+</html>
