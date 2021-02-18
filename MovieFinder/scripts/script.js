@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	console.log('Hello');
+	console.log('Hello - все працює');
 	let clickPage = "1";
 	let searchRequest = "";
 	$("#requestToSearch")
