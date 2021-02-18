@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.b {
+  border: solid 1px red;
+}
+
+.main-title {
+  font-size: 55px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.main-title--noFilm {
+  font-size: 45px;
+  text-align: center;
+  color: #d4d4d4;
+  width: 100%;
+}
+
+.container {
+  background-color: rgba(245, 233, 233, 0.35);
+  border-radius: 5px;
+  margin: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 5px 0 15px rgba(245, 233, 233, 0.35);
+          box-shadow: 5px 0 15px rgba(245, 233, 233, 0.35);
+}
+
+.search-container {
+  margin: 50px auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-container #requestToSearch {
+  height: 40px;
+  width: 60%;
+  font-size: 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 3px rgba(141, 134, 134, 0.61);
+  outline: none;
+}
+
+.search-container #requestToSearch:active {
+  -webkit-box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+          box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+}
+
+.search-container select {
+  width: 120px;
+  text-align: center;
+  margin: auto 20px auto 20px;
+  padding-left: 15px;
+  height: 44px;
+  font-size: 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px rgba(141, 134, 134, 0.61);
+}
+
+.search-container select:active {
+  outline: none;
+  -webkit-box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+          box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+}
+
+.search-container select option {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  outline: ridge;
+}
+
+.search-container select option:hover {
+  background-color: rgba(172, 167, 167, 0.5);
+  color: black;
+  -webkit-box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+          box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+}
+
+.search-container #search {
+  width: 120px;
+  height: 44px;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px rgba(141, 134, 134, 0.61);
+  outline: none;
+}
+
+.search-container #search:hover {
+  -webkit-box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+          box-shadow: 5px 0 15px rgba(167, 164, 164, 0.575);
+}
+
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.requestDisplay {
+  margin: auto 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  color: rgba(245, 238, 238, 0.89);
+}
+
+.result-container {
+  background: rgba(255, 255, 255, 0.082);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-attachment: fixed;
+  color: #a39f9f;
+  border-radius: 30px;
+  margin: 30px auto auto auto;
+  width: 80%;
+}
+
+.results {
+  margin: 30px 20px auto 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+html {
+  color: rgba(245, 233, 233, 0.308);
+}
+
+.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.pages .page {
+  padding: 5%;
+  color: rgba(255, 235, 205, 0.376);
+}
+
+.pages .page:hover {
+  color: blanchedalmond;
+}
+
+.pages .active {
+  padding: 15px;
+  color: white;
+  text-decoration: underline;
+}
+
+.page-indicator {
+  margin: auto 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  color: rgba(245, 238, 238, 0.89);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card--flex {
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .card--flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card__img {
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__about {
+  padding-left: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+.card__about__pilot {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+  .card__img {
+    height: 500px;
+  }
+  .card__about {
+    padding-left: 15px;
+    color: black;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card__poster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card__img {
+    padding-top: 4%;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .card__img {
+    padding-top: 4%;
+    height: 550px;
+  }
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(36, 36, 36, 0.8);
+  z-index: 11;
+}
+
+.details {
+  position: absolute;
+  display: inline;
+  max-width: 70vw;
+  max-height: 70vw;
+  z-index: 12;
+  overflow-y: auto;
+}
+
+.details-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+/*# sourceMappingURL=style.css.map */

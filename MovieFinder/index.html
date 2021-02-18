@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Finder</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <h1 class="main-title">
+      OMDb movie search
+    </h1>
+    <div class="search-container">
+      <input
+        type="text"
+        name="request"
+        id="requestToSearch"
+        placeholder="  Search by name"
+      />
+      <select id="type">
+        <option value="movie">Movie</option>
+        <option value="series">Series</option>
+        <option value="episode">Episode</option>
+      </select>
+      <button id="search">Search</button>
+    </div>
+    <div class="result-container">
+      <div class="requestDisplay"></div>
+      <div class="page-indicator"></div>
+      <div class="results"></div>
+      <div class="pages"></div>
+    </div>
+
+    <div class="details-wrapper">
+      <div class="cover"></div>
+
+      <div class="details" id=""></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

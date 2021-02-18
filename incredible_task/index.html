@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Incredible</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Incredible + localStorage (favorite movie)</title>
+    <script
+      src="https://kit.fontawesome.com/de380f790c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <style>
       #content {
         display: flex;
@@ -14,11 +18,24 @@
       #content div {
         width: 33%;
       }
+      i {
+        font-size: 20px;
+      }
+      #buttonFavorites {
+        border-radius: 20px;
+        background: white;
+
+        padding: 12px 30px;
+        text-align: center;
+      }
+      #favorites-block {
+        display: none;
+      }
     </style>
     <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
-    <input type="text" name="text" id="userValue" value="search by name" />
+    <input type="text" name="text" id="userValue" value="New York" />
     <select id="single">
       <option>movie</option>
       <option>series</option>
@@ -27,8 +44,22 @@
     <button id="Search" onclick="pressFuncSearch()">Search</button>
     <div id="DIV"></div>
 
-    <div id="content"></div>
+    <button id="buttonFavorites" onclick="favorites()">
+      Favorite films
+    </button>
 
+    <button onclick="favorites()">
+      <i class="far fa-heart"></i>
+      <i class="fas fa-heart"></i>
+    </button>
+
+    <i class="far fa-heart"></i>
+    <div id="content"></div>
+    <div id="favorites-block" class="favorites">
+      <div class="favorites__title">Favorites</div>
+      <div id="favorites" class="favorites__results results"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="scr.js"></script>
   </body>
 </html>
