@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	console.log('Hello');
 	let clickPage = "1";
 	let searchRequest = "";
 	$("#requestToSearch")
